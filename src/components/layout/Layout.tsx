@@ -5,6 +5,7 @@ import {
 } from '@mui/material';
 import { useAuth } from '../../hooks';
 import {
+  Group,
   Person as PersonIcon,
   Assignment as TaskIcon,
 } from '@mui/icons-material';
@@ -23,6 +24,7 @@ export const Layout = ({ children }: Props) => {
   const menuOptions: MenuType[] = [
     { text: 'Mi Perfil', icon: <PersonIcon />, path: '/perfil' },
     { text: 'Mis Tareas', icon: <TaskIcon />, path: '/tasks' },
+    { text: 'Gestionar Usuarios', icon: <Group />, path: '/users' },
   ];
 
   return (
